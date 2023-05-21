@@ -1,5 +1,5 @@
 {
-  "name": "tailwindcss",
+  "name": "@bayathy/eslint-config-tailwindcss",
   "version": "1.0.0",
   "description": "My tailwindcss eslint config",
   "main": "index.js",
@@ -9,7 +9,8 @@
   "keywords": [],
   "author": "Bayathy",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
+    "@bayathy/eslint-config": "workspace:*",
     "eslint-plugin-tailwindcss": "^3.12.0"
   }
 }

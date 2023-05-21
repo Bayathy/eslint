@@ -1,5 +1,5 @@
 {
-  "name": "next",
+  "name": "@bayathy/eslint-config-next",
   "version": "1.0.0",
   "description": "My next eslint config",
   "main": "index.js",
@@ -9,7 +9,8 @@
   "keywords": [],
   "author": "Bayathy",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
+    "@bayathy/eslint-config": "workspace:*",
     "eslint-config-next": "^13.4.3"
   }
 }

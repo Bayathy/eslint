@@ -8,8 +8,9 @@ module.exports = {
   ],
   plugins: ["unused-imports"],
   settings: {
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx "],
+    "import/resolver": {
+      typescript: true,
+      node: true,
     },
   },
   parser: "@typescript-eslint/parser",

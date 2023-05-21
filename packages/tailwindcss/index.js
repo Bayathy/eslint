@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ["plugin:tailwindcss/recommended"],
+  extends: ["@bayathy/eslint-config", "plugin:tailwindcss/recommended"],
 };

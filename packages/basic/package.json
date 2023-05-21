@@ -1,7 +1,7 @@
 {
-  "name": "@bayathy/eslint-config-basic",
+  "name": "@bayathy/eslint-config",
   "version": "1.0.0",
-  "description": "My basic eslint config",
+  "description": "My basic eslint plugin",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +9,9 @@
   "keywords": [],
   "author": "Bayathy",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "@typescript-eslint/parser": "^5.59.6",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-sonarjs": "^0.19.0",

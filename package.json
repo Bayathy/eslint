@@ -1,13 +1,12 @@
 {
   "name": "@bayathy/eslint-monorepo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "My eslint rules sets",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "pnpm -r run build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Bayathy",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.41.0"
