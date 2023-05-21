@@ -1,7 +1,13 @@
 {
-  "name": "@bayathy/eslint-monorepo",
+  "name": "@bayathy/eslint-config",
   "version": "1.0.0",
-  "description": "My eslint rules sets",
+  "private": true,
+  "description": "My eslint rules set",
+  "homepage": "https://github.com/Bayathy/eslint",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bayathy/eslint.git"
+  },
   "scripts": {
     "build": "pnpm -r run build"
   },
