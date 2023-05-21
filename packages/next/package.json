@@ -10,7 +10,6 @@
   "author": "Bayathy",
   "license": "MIT",
   "dependencies": {
-    "@bayathy/eslint-config": "workspace:*",
     "eslint-config-next": "^13.4.3"
   }
 }

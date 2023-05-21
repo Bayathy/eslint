@@ -10,7 +10,6 @@
   "author": "Bayathy",
   "license": "MIT",
   "dependencies": {
-    "@bayathy/eslint-config": "workspace:*",
     "eslint-plugin-tailwindcss": "^3.12.0"
   }
 }
