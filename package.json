@@ -9,12 +9,13 @@
     "url": "https://github.com/Bayathy/eslint.git"
   },
   "scripts": {
-    "build": "pnpm -r run build"
+    "ci:publish": "pnpm publish -r"
   },
   "keywords": [],
   "author": "Bayathy",
   "license": "ISC",
   "devDependencies": {
+    "@changesets/cli": "^2.26.1",
     "eslint": "^8.41.0"
   }
 }

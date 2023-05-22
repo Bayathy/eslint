@@ -1,48 +1,38 @@
-name: Publish To npm
+name: Changesets
 on:
   push:
     branches:
       - main
-  workflow_dispatch:
+env:
+  CI: true
+  PNPM_CACHE_FOLDER: .pnpm-store
 jobs:
-  publish-to-npm:
+  version:
+    timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: checkout code repository
         uses: actions/checkout@v3
-      - name: Use Node.js And Setup .npmrc
+        with:
+          fetch-depth: 0
+      - name: setup node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "16.x"
-          registry-url: "https://registry.npmjs.org"
-          scope: "eslint-config-bayathy"
-          always-auth: true
+          node-version: 14
+      - name: install pnpm
+        run: npm i pnpm@latest -g
+      - name: Setup npmrc
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NODE_AUTH_TOKEN }}" > .npmrc
+      - name: setup pnpm config
+        run: pnpm config set store-dir $PNPM_CACHE_FOLDER
+      - name: install dependencies
+        run: pnpm install
+      - name: create and publish versions
+        uses: changesets/action@v1
+        with:
+          version: pnpm ci:version
+          commit: "chore: update versions"
+          title: "chore: update versions"
+          publish: pnpm ci:publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
-      - name: set up Git
-        run: |
-          git config user.name "${GITHUB_ACTOR}";
-          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com";
-          git pull 	--depth=1 origin master;
-      - name: update patch version
-        run: |
-          npm version patch
-      - name: push
-        run: |
-          git push origin HEAD:${GITHUB_REF};
-      - name: Can Publish
-        run: npx can-npm-publish --verbose
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
-      - name: Install
-        run: npm install
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
-      - name: Build
-        run: npm run build --if-present
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
-      - name: Publish
-        run: npm publish --access=public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
