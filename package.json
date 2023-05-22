@@ -9,7 +9,7 @@
     "url": "https://github.com/Bayathy/eslint.git"
   },
   "scripts": {
-    "ci:publish": "pnpm publish -r"
+    "ci:publish": "pnpm publish -r --no-git-checks"
   },
   "keywords": [],
   "author": "Bayathy",
