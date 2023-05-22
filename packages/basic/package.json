@@ -4,9 +4,7 @@
   "description": "My basic eslint plugin",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "ci:version": "changeset version",
-    "ci:publish": "changeset publish"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Bayathy",
