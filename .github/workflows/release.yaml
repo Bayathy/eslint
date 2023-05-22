@@ -52,5 +52,14 @@ jobs:
       - name: install dependencies
         run: pnpm install
 
-      - name: release packeges
-        run: pnpm -r publish
+      - name: Create release PR or publish to npm
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          version: pnpm ci:version
+          publish: pnpm ci:publish
+          title: "release updated version"
+          commit: "chore: update version"
+          createGithubReleases: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
