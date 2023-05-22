@@ -8,14 +8,10 @@
     "type": "git",
     "url": "https://github.com/Bayathy/eslint.git"
   },
-  "scripts": {
-    "ci:publish": "pnpm publish -r --no-git-checks"
-  },
   "keywords": [],
   "author": "Bayathy",
   "license": "ISC",
   "devDependencies": {
-    "@changesets/cli": "^2.26.1",
     "eslint": "^8.41.0"
   }
 }
