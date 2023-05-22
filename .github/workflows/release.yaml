@@ -41,10 +41,10 @@ jobs:
 
       - name: Setup npmrc
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
         run: |
           cat << EOF > "$HOME/.npmrc"
-            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+            //registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN
           EOF
 
       - name: setup pnpm config
