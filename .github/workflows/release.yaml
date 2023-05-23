@@ -1,8 +1,11 @@
-name: Changesets
+name: Relese Packages
 on:
   push:
     branches:
       - main
+permissions:
+  contents: write
+  pull-requests: write
 env:
   CI: true
   PNPM_CACHE_FOLDER: .pnpm-store
@@ -16,43 +19,30 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: setup node.js
-        uses: actions/setup-node@v3
+      - name: release please
+        uses: google-github-actions/release-please-action@v3
         with:
-          node-version: 16
+          release-type: node
+          command: manifest
+          config-file: .github/release-please-config.json
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
           version: 7
 
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        run: |
-          echo "PNPM_CACHE_DIR=$(pnpm store path)" >> $GITHUB_OUTPUT
-
-      - name: Setup pnpm cache
-        uses: actions/cache@v3
+      - name: setup node.js
+        uses: actions/setup-node@v3
         with:
-          path: ${{ steps.pnpm-cache.outputs.PNPM_CACHE_DIR }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+          node-version: 16
+          cache: pnpm
 
-      - name: setup pnpm config
-        run: pnpm config set store-dir $PNPM_CACHE_FOLDER
+            - name: Setup npmrc
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NODE_AUTH_TOKEN }}" > .npmrc
+
       - name: install dependencies
         run: pnpm install
-
-      - name: Create release PR or publish to npm
-        id: changesets
-        uses: changesets/action@v1
-        with:
-          version: pnpm ci:version
-          publish: pnpm ci:publish
-          title: "release updated version"
-          commit: "chore: update version"
-          createGithubReleases: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+      
+      - name: release packages
+        run: pnpm -r publish --no-git-checks

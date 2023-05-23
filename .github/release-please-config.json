@@ -1,0 +1,19 @@
+{
+    "packages":{
+      "packages/basic": {
+        "component": "eslint-config"
+      },
+      "packages/jest": {
+        "component": "eslint-config-jest"
+      },
+      "packages/next": {
+        "component": "eslint-config-next"
+      },
+      "packages/react": {
+        "component": "eslint-config-react"
+      },
+      "packages/tailwindcss": {
+        "component": "eslint-config-tailwindcss"
+      }
+    }
+}
