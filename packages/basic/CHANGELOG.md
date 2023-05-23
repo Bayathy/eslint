@@ -1,5 +1,23 @@
 # @bayathy/eslint-config
 
+## [1.1.0](https://github.com/Bayathy/eslint/compare/eslint-config-v1.0.1...eslint-config-v1.1.0) (2023-05-23)
+
+
+### Features
+
+* add manifest.json ([08aa4b9](https://github.com/Bayathy/eslint/commit/08aa4b9e80c2be7f888cbcc0b422bdaf640caea5))
+* introduce changeset ([58fc192](https://github.com/Bayathy/eslint/commit/58fc1920cd651f31c206a7e10d8500ea5796cc19))
+* update ([1bc907c](https://github.com/Bayathy/eslint/commit/1bc907c66ad0b64f47d7956028c8dc1d72b713b8))
+* update dependencies ([2830055](https://github.com/Bayathy/eslint/commit/28300552f92684aa277ebdc19dc6f21829824cfe))
+* update dependencies ([7e2c1fa](https://github.com/Bayathy/eslint/commit/7e2c1fa5fa09e8b89800e4c54230262c45888624))
+* update version ([37f45fe](https://github.com/Bayathy/eslint/commit/37f45fe837fd823f5a80244221d274fa04789494))
+
+
+### Bug Fixes
+
+* fix package.json ([ddf61f8](https://github.com/Bayathy/eslint/commit/ddf61f857bb26fd0675b4a01aaa2f90593e08ec8))
+* fix script miss ([04098b2](https://github.com/Bayathy/eslint/commit/04098b25d6a3508ad753bc6e1f1c1ccea658cd62))
+
 ## 2.0.0
 
 ### Major Changes
