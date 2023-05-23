@@ -16,8 +16,10 @@
       "component": "eslint-config-tailwindcss"
     }
   },
-  "plugins": {
-    "type": "node-workspace",
-    "merge": false
-  }
+  "plugins": [
+    {
+      "type": "node-workspace",
+      "merge": false
+    }
+  ]
 }
