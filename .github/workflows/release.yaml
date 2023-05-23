@@ -40,7 +40,10 @@ jobs:
           cache: pnpm
 
       - name: Setup npmrc
-        run: pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NODE_AUTH_TOKEN }}
+        run: |
+          pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NODE_AUTH_TOKEN }}
+          pnpm -r publish --access public --no-git-checks
+        shell: bash
 
       - name: install dependencies
         run: pnpm install
