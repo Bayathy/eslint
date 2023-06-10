@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/Bayathy/eslint/compare/eslint-config-react-v1.1.0...eslint-config-react-v1.1.1) (2023-06-10)
+
+
+### Bug Fixes
+
+* 修正 ([aeacafd](https://github.com/Bayathy/eslint/commit/aeacafdc7f14c1df234b5c2849620cc59dc75f1c))
+
 ## [1.1.0](https://github.com/Bayathy/eslint/compare/eslint-config-react-v1.0.0...eslint-config-react-v1.1.0) (2023-05-23)
 
 
