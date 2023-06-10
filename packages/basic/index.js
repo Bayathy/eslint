@@ -4,6 +4,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:unicorn/recommended",
     "plugin:import/recommended",
+    "plugin:jsx-a11y/strict",
     "prettier",
   ],
   plugins: ["unused-imports"],
