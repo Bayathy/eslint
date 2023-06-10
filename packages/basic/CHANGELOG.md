@@ -1,5 +1,12 @@
 # @bayathy/eslint-config
 
+## [1.2.1](https://github.com/Bayathy/eslint/compare/eslint-config-v1.2.0...eslint-config-v1.2.1) (2023-06-10)
+
+
+### Bug Fixes
+
+* 修正 ([aeacafd](https://github.com/Bayathy/eslint/commit/aeacafdc7f14c1df234b5c2849620cc59dc75f1c))
+
 ## [1.2.0](https://github.com/Bayathy/eslint/compare/eslint-config-v1.1.0...eslint-config-v1.2.0) (2023-06-10)
 
 
