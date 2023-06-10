@@ -1,5 +1,13 @@
 # @bayathy/eslint-config
 
+## [1.2.0](https://github.com/Bayathy/eslint/compare/eslint-config-v1.1.0...eslint-config-v1.2.0) (2023-06-10)
+
+
+### Features
+
+* basicの設定にa11yを足した ([7fdfabd](https://github.com/Bayathy/eslint/commit/7fdfabd9cdf9f10c3b82fb2430f3e99f8d3f6c15))
+* basicの設定にa11yを足した ([ef2ab9a](https://github.com/Bayathy/eslint/commit/ef2ab9a0642a70d623c9279582e85bf12aa4af00))
+
 ## [1.1.0](https://github.com/Bayathy/eslint/compare/eslint-config-v1.0.1...eslint-config-v1.1.0) (2023-05-23)
 
 
