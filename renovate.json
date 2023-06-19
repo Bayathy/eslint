@@ -3,7 +3,9 @@
   "extends": [
     ":timezone(Asia/Tokyo)",
     ":label(renovate)",
-    ":semanticCommitTypeAll(chore)"
+    ":semanticCommitTypeAll(chore)",
+    "group:monorepos",
+    "config:base"
   ],
   "labels": ["dependencies", "renovate"],
   "schedule": ["every weekend"],
