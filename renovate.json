@@ -5,10 +5,9 @@
     ":label(renovate)",
     ":prConcurrentLimit10",
     ":semanticCommitTypeAll(chore)",
-    "schedule:weekly" 
+    "schedule:weekly"
   ],
   "baseBranches": ["main"],
-  "labels": ["dependencies", "renovate"],
   "dependencyDashboard": true,
   "groupName": "all"
 }
