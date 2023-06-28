@@ -67,5 +67,6 @@ module.exports = {
     "prefer-object-spread": "error",
     "prefer-template": "error",
     "keyword-spacing": ["error", { before: true }],
+    "unicorn/prevent-abbreviations": "off",
   },
 };
