@@ -1,7 +1,7 @@
 {
-  "packages/basic": "1.3.0",
-  "packages/jest": "1.3.0",
-  "packages/next": "1.3.0",
-  "packages/react": "1.3.0",
-  "packages/tailwindcss": "1.3.0"
+  "packages/basic": "1.3.1",
+  "packages/jest": "1.3.1",
+  "packages/next": "1.3.1",
+  "packages/react": "1.3.1",
+  "packages/tailwindcss": "1.3.1"
 }
