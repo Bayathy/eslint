@@ -1,0 +1,1423 @@
+DEBUG: Using RE2 as regex engine
+DEBUG: Parsing configs
+DEBUG: Checking for config file in /home/bayathy/develop/eslint/./renovate.json
+DEBUG: File config
+       "config": {
+         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+         "extends": [
+           ":timezone(Asia/Tokyo)",
+           ":label(renovate)",
+           ":semanticCommitTypeAll(chore)",
+           "group:monorepos",
+           "config:base"
+         ],
+         "labels": ["dependencies", "renovate"],
+         "schedule": ["every weekend"],
+         "dependencyDashboard": true
+       }
+DEBUG: CLI config
+       "config": {
+         "repositories": ["bayathy/eslint"],
+         "dryRun": "full",
+         "requireConfig": "ignored",
+         "schedule": [],
+         "token": "***********"
+       }
+DEBUG: Env config
+       "config": {"hostRules": []}
+DEBUG: Combined config
+       "config": {
+         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+         "extends": [
+           ":timezone(Asia/Tokyo)",
+           ":label(renovate)",
+           ":semanticCommitTypeAll(chore)",
+           "group:monorepos",
+           "config:base"
+         ],
+         "labels": ["dependencies", "renovate"],
+         "schedule": [],
+         "dependencyDashboard": true,
+         "hostRules": [],
+         "repositories": ["bayathy/eslint"],
+         "dryRun": "full",
+         "requireConfig": "ignored",
+         "token": "***********"
+       }
+DEBUG: Enabling forkProcessing while in non-autodiscover mode
+DEBUG: Found valid git version: 2.40.1
+DEBUG: Using default github endpoint: https://api.github.com/
+DEBUG: GET https://api.github.com/user/emails = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=219)
+DEBUG: Cannot read user/emails endpoint on GitHub to retrieve gitAuthor
+DEBUG: Platform config
+       "platformConfig": {
+         "hostType": "github",
+         "endpoint": "https://api.github.com/",
+         "isGHApp": false,
+         "isGhe": false,
+         "userDetails": {"username": "Bayathy", "name": "Keito Kobayashi"},
+         "userEmail": null
+       },
+       "renovateUsername": "Bayathy"
+DEBUG: Adding token authentication for api.github.com to hostRules
+DEBUG: Using baseDir: /tmp/renovate
+DEBUG: Using cacheDir: /tmp/renovate/cache
+DEBUG: Using containerbaseDir: /tmp/renovate/cache/containerbase
+DEBUG: Initializing Renovate internal cache into /tmp/renovate/cache/renovate/renovate-cache-v1
+DEBUG: Commits limit = null
+DEBUG: Setting global hostRules
+DEBUG: Adding token authentication for api.github.com to hostRules
+DEBUG: validatePresets()
+DEBUG: Reinitializing hostRules for repo
+DEBUG: Clearing hostRules
+DEBUG: Adding token authentication for api.github.com to hostRules
+ INFO: Repository started (repository=bayathy/eslint)
+       "renovateVersion": "35.144.0"
+DEBUG: Using localDir: /tmp/renovate/repos/github/bayathy/eslint (repository=bayathy/eslint)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=bayathy/eslint)
+DEBUG: initRepo("bayathy/eslint") (repository=bayathy/eslint)
+DEBUG: bayathy/eslint default branch = main (repository=bayathy/eslint)
+DEBUG: Using personal access token for git init (repository=bayathy/eslint)
+DEBUG: Resetting npmrc (repository=bayathy/eslint)
+DEBUG: Resetting npmrc (repository=bayathy/eslint)
+DEBUG: checkOnboarding() (repository=bayathy/eslint)
+DEBUG: isOnboarded() (repository=bayathy/eslint)
+DEBUG: Config file will be ignored (repository=bayathy/eslint)
+DEBUG: Repo is onboarded (repository=bayathy/eslint)
+DEBUG: migrateAndValidate() (repository=bayathy/eslint)
+DEBUG: No config migration necessary (repository=bayathy/eslint)
+DEBUG: massaged config (repository=bayathy/eslint)
+       "config": {
+         "extends": [
+           ":timezone(Asia/Tokyo)",
+           ":label(renovate)",
+           ":semanticCommitTypeAll(chore)",
+           "group:monorepos",
+           "config:base"
+         ]
+       }
+DEBUG: migrated config (repository=bayathy/eslint)
+       "config": {
+         "extends": [
+           ":timezone(Asia/Tokyo)",
+           ":label(renovate)",
+           ":semanticCommitTypeAll(chore)",
+           "group:monorepos",
+           "config:base"
+         ]
+       }
+DEBUG: Setting hostRules from config (repository=bayathy/eslint)
+DEBUG: Found repo ignorePaths (repository=bayathy/eslint)
+       "ignorePaths": [
+         "**/node_modules/**",
+         "**/bower_components/**",
+         "**/vendor/**",
+         "**/examples/**",
+         "**/__tests__/**",
+         "**/test/**",
+         "**/tests/**",
+         "**/__fixtures__/**"
+       ]
+DEBUG: No vulnerability alerts found (repository=bayathy/eslint)
+DEBUG: No vulnerability alerts found (repository=bayathy/eslint)
+DEBUG: findIssue(Dependency Dashboard) (repository=bayathy/eslint)
+DEBUG: Retrieving issueList (repository=bayathy/eslint)
+DEBUG: Retrieved 1 issues (repository=bayathy/eslint)
+DEBUG: Found issue 10 (repository=bayathy/eslint)
+DEBUG: No baseBranches (repository=bayathy/eslint)
+DEBUG: extract() (repository=bayathy/eslint)
+DEBUG: Setting current branch to main (repository=bayathy/eslint)
+DEBUG: Initializing git repository into /tmp/renovate/repos/github/bayathy/eslint (repository=bayathy/eslint)
+DEBUG: Performing blobless clone (repository=bayathy/eslint)
+DEBUG: git clone completed (repository=bayathy/eslint)
+       "durationMs": 1558
+DEBUG: latest repository commit (repository=bayathy/eslint)
+       "latestCommit": {
+         "hash": "366701377c417274594593b124eef56bb3400ce8",
+         "date": "2023-06-19T13:34:47+09:00",
+         "message": "Merge pull request #9 from Bayathy/Bayathy-patch-1",
+         "refs": "HEAD -> main, origin/main, origin/HEAD",
+         "body": "Update renovate.json",
+         "author_name": "Keito Kobayashi",
+         "author_email": "68783260+Bayathy@users.noreply.github.com"
+       }
+DEBUG: latest commit (repository=bayathy/eslint)
+       "branchName": "main",
+       "latestCommitDate": "2023-06-19T13:34:47+09:00"
+DEBUG: Using file match: (^|/)tasks/[^/]+\.ya?ml$ for manager ansible (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)requirements\.ya?ml$ for manager ansible-galaxy (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)galaxy\.ya?ml$ for manager ansible-galaxy (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)\.tool-versions$ for manager asdf (repository=bayathy/eslint)
+DEBUG: Using file match: azure.*pipelines?.*\.ya?ml$ for manager azure-pipelines (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)batect(-bundle)?\.ya?ml$ for manager batect (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)batect$ for manager batect-wrapper (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)WORKSPACE(|\.bazel)$ for manager bazel (repository=bayathy/eslint)
+DEBUG: Using file match: \.bzl$ for manager bazel (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)MODULE\.bazel$ for manager bazel-module (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)\.bazelversion$ for manager bazelisk (repository=bayathy/eslint)
+DEBUG: Using file match: \.bicep$ for manager bicep (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)\.?bitbucket-pipelines\.ya?ml$ for manager bitbucket-pipelines (repository=bayathy/eslint)
+DEBUG: Using file match: buildkite\.ya?ml for manager buildkite (repository=bayathy/eslint)
+DEBUG: Using file match: \.buildkite/.+\.ya?ml$ for manager buildkite (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)Gemfile$ for manager bundler (repository=bayathy/eslint)
+DEBUG: Using file match: \.cake$ for manager cake (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)Cargo\.toml$ for manager cargo (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)\.circleci/config\.ya?ml$ for manager circleci (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)cloudbuild\.ya?ml for manager cloudbuild (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)Podfile$ for manager cocoapods (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)([\w-]*)composer\.json$ for manager composer (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)conanfile\.(txt|py)$ for manager conan (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)cpanfile$ for manager cpanfile (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)(?:deps|bb)\.edn$ for manager deps-edn (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)(?:docker-)?compose[^/]*\.ya?ml$ for manager docker-compose (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/|\.)([Dd]ocker|[Cc]ontainer)file$ for manager dockerfile (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)([Dd]ocker|[Cc]ontainer)file[^/]*$ for manager dockerfile (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)\.drone\.yml$ for manager droneci (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)fleet\.ya?ml for manager fleet (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)flux-system/(?:.+/)?gotk-components\.ya?ml$ for manager flux (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)\.fvm/fvm_config\.json$ for manager fvm (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)\.gitmodules$ for manager git-submodules (repository=bayathy/eslint)
+DEBUG: Using file match: ^(workflow-templates|\.github/workflows)/[^/]+\.ya?ml$ for manager github-actions (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)action\.ya?ml$ for manager github-actions (repository=bayathy/eslint)
+DEBUG: Using file match: \.gitlab-ci\.ya?ml$ for manager gitlabci (repository=bayathy/eslint)
+DEBUG: Using file match: \.gitlab-ci\.ya?ml$ for manager gitlabci-include (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)go\.mod$ for manager gomod (repository=bayathy/eslint)
+DEBUG: Using file match: \.gradle(\.kts)?$ for manager gradle (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)gradle\.properties$ for manager gradle (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)gradle/.+\.toml$ for manager gradle (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)buildSrc/.+\.kt$ for manager gradle (repository=bayathy/eslint)
+DEBUG: Using file match: \.versions\.toml$ for manager gradle (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)versions.props$ for manager gradle (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)versions.lock$ for manager gradle (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)gradle/wrapper/gradle-wrapper\.properties$ for manager gradle-wrapper (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)requirements\.ya?ml$ for manager helm-requirements (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)values\.ya?ml$ for manager helm-values (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)helmfile\.ya?ml$ for manager helmfile (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)Chart\.ya?ml$ for manager helmv3 (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)bin/hermit$ for manager hermit (repository=bayathy/eslint)
+DEBUG: Using file match: ^Formula/[^/]+[.]rb$ for manager homebrew (repository=bayathy/eslint)
+DEBUG: Using file match: \.html?$ for manager html (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)plugins\.(txt|ya?ml)$ for manager jenkins (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)jsonnetfile\.json$ for manager jsonnet-bundler (repository=bayathy/eslint)
+DEBUG: Using file match: ^.+\.main\.kts$ for manager kotlin-script (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)kustomization\.ya?ml$ for manager kustomize (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)project\.clj$ for manager leiningen (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/|\.)pom\.xml$ for manager maven (repository=bayathy/eslint)
+DEBUG: Using file match: ^(((\.mvn)|(\.m2))/)?settings\.xml$ for manager maven (repository=bayathy/eslint)
+DEBUG: Using file match: (^|\/).mvn/wrapper/maven-wrapper.properties$ for manager maven-wrapper (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)package\.js$ for manager meteor (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)Mintfile$ for manager mint (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)mix\.exs$ for manager mix (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)flake\.nix$ for manager nix (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)\.node-version$ for manager nodenv (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)package\.json$ for manager npm (repository=bayathy/eslint)
+DEBUG: Using file match: \.(?:cs|fs|vb)proj$ for manager nuget (repository=bayathy/eslint)
+DEBUG: Using file match: \.(?:props|targets)$ for manager nuget (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)dotnet-tools\.json$ for manager nuget (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)global\.json$ for manager nuget (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)\.nvmrc$ for manager nvm (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)src/main/features/.+\.json$ for manager osgi (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)pyproject\.toml$ for manager pep621 (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)[\w-]*requirements(-\w+)?\.(txt|pip)$ for manager pip_requirements (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)setup\.py$ for manager pip_setup (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)Pipfile$ for manager pipenv (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)pyproject\.toml$ for manager poetry (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)\.pre-commit-config\.ya?ml$ for manager pre-commit (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)pubspec\.ya?ml$ for manager pub (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)Puppetfile$ for manager puppet (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)\.python-version$ for manager pyenv (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)\.ruby-version$ for manager ruby-version (repository=bayathy/eslint)
+DEBUG: Using file match: \.sbt$ for manager sbt (repository=bayathy/eslint)
+DEBUG: Using file match: project/[^/]*\.scala$ for manager sbt (repository=bayathy/eslint)
+DEBUG: Using file match: project/build\.properties$ for manager sbt (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)setup\.cfg$ for manager setup-cfg (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)Package\.swift for manager swift (repository=bayathy/eslint)
+DEBUG: Using file match: \.tf$ for manager terraform (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)\.terraform-version$ for manager terraform-version (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)terragrunt\.hcl$ for manager terragrunt (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)\.terragrunt-version$ for manager terragrunt-version (repository=bayathy/eslint)
+DEBUG: Using file match: \.tflint\.hcl$ for manager tflint-plugin (repository=bayathy/eslint)
+DEBUG: Using file match: ^\.travis\.ya?ml$ for manager travis (repository=bayathy/eslint)
+DEBUG: Using file match: (^|/)\.vela\.ya?ml$ for manager velaci (repository=bayathy/eslint)
+DEBUG: Using file match: ^\.woodpecker(?:/[^/]+)?\.ya?ml$ for manager woodpecker (repository=bayathy/eslint)
+DEBUG: Matched 1 file(s) for manager github-actions: .github/workflows/release.yaml (repository=bayathy/eslint)
+DEBUG: Matched 6 file(s) for manager npm: package.json, packages/basic/package.json, packages/jest/package.json, packages/next/package.json, packages/react/package.json, packages/tailwindcss/package.json (repository=bayathy/eslint)
+DEBUG: npm file package.json has name "@bayathy/eslint-config" (repository=bayathy/eslint)
+DEBUG: npm file packages/basic/package.json has name "@bayathy/eslint-config" (repository=bayathy/eslint)
+DEBUG: npm file packages/jest/package.json has name "@bayathy/eslint-config-jest" (repository=bayathy/eslint)
+DEBUG: npm file packages/next/package.json has name "@bayathy/eslint-config-next" (repository=bayathy/eslint)
+DEBUG: npm file packages/react/package.json has name "@bayathy/eslint-config-react" (repository=bayathy/eslint)
+DEBUG: npm file packages/tailwindcss/package.json has name "@bayathy/eslint-config-tailwindcss" (repository=bayathy/eslint)
+DEBUG: Detecting pnpm Workspaces (repository=bayathy/eslint)
+DEBUG: Detecting Lerna and Yarn Workspaces (repository=bayathy/eslint)
+DEBUG: Finding locked versions (repository=bayathy/eslint)
+DEBUG: Found pnpm lock-file (repository=bayathy/eslint)
+DEBUG: Found pnpm lock-file (repository=bayathy/eslint)
+DEBUG: Found pnpm lock-file (repository=bayathy/eslint)
+DEBUG: Found pnpm lock-file (repository=bayathy/eslint)
+DEBUG: Found pnpm lock-file (repository=bayathy/eslint)
+DEBUG: Found pnpm lock-file (repository=bayathy/eslint)
+DEBUG: manager extract durations (ms) (repository=bayathy/eslint)
+       "managers": {"github-actions": 5, "npm": 40}
+DEBUG: Found github-actions package files (repository=bayathy/eslint)
+DEBUG: Found npm package files (repository=bayathy/eslint)
+DEBUG: Found 7 package file(s) (repository=bayathy/eslint)
+ INFO: Dependency extraction complete (repository=bayathy/eslint, baseBranch=main)
+       "stats": {
+         "managers": {
+           "github-actions": {"fileCount": 1, "depCount": 4},
+           "npm": {"fileCount": 6, "depCount": 18}
+         },
+         "total": {"fileCount": 7, "depCount": 22}
+       }
+DEBUG: PackageFiles.add() - Package file saved for base branch (repository=bayathy/eslint, baseBranch=main)
+DEBUG: Package releases lookups complete (repository=bayathy/eslint, baseBranch=main)
+DEBUG: branchifyUpgrades (repository=bayathy/eslint)
+DEBUG: detectSemanticCommits() (repository=bayathy/eslint)
+DEBUG: getCommitMessages (repository=bayathy/eslint)
+DEBUG: semanticCommits: detected "angular" (repository=bayathy/eslint)
+DEBUG: semanticCommits: enabled (repository=bayathy/eslint)
+DEBUG: 9 flattened updates found: @changesets/cli, eslint, @typescript-eslint/eslint-plugin, @typescript-eslint/parser, @typescript-eslint/utils, eslint-plugin-jest, eslint-plugin-jest-dom, eslint-config-next, eslint-plugin-tailwindcss (repository=bayathy/eslint)
+DEBUG: Returning 7 branch(es) (repository=bayathy/eslint)
+DEBUG: config.repoIsOnboarded=true (repository=bayathy/eslint)
+DEBUG: packageFiles with updates (repository=bayathy/eslint, baseBranch=main)
+       "config": {
+         "github-actions": [
+           {
+             "deps": [
+               {
+                 "depName": "actions/checkout",
+                 "commitMessageTopic": "{{{depName}}} action",
+                 "datasource": "github-tags",
+                 "versioning": "docker",
+                 "depType": "action",
+                 "replaceString": "actions/checkout@v3",
+                 "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+                 "currentValue": "v3",
+                 "updates": [],
+                 "packageName": "actions/checkout",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/actions/checkout",
+                 "registryUrl": "https://github.com",
+                 "currentVersion": "v3",
+                 "fixedVersion": "v3"
+               },
+               {
+                 "depName": "google-github-actions/release-please-action",
+                 "commitMessageTopic": "{{{depName}}} action",
+                 "datasource": "github-tags",
+                 "versioning": "docker",
+                 "depType": "action",
+                 "replaceString": "google-github-actions/release-please-action@v3",
+                 "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+                 "currentValue": "v3",
+                 "updates": [],
+                 "packageName": "google-github-actions/release-please-action",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/google-github-actions/release-please-action",
+                 "registryUrl": "https://github.com",
+                 "currentVersion": "v3",
+                 "fixedVersion": "v3"
+               },
+               {
+                 "depName": "pnpm/action-setup",
+                 "commitMessageTopic": "{{{depName}}} action",
+                 "datasource": "github-tags",
+                 "versioning": "docker",
+                 "depType": "action",
+                 "replaceString": "pnpm/action-setup@v2",
+                 "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+                 "currentValue": "v2",
+                 "updates": [],
+                 "packageName": "pnpm/action-setup",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/pnpm/action-setup",
+                 "registryUrl": "https://github.com",
+                 "currentVersion": "v2",
+                 "fixedVersion": "v2"
+               },
+               {
+                 "depName": "actions/setup-node",
+                 "commitMessageTopic": "{{{depName}}} action",
+                 "datasource": "github-tags",
+                 "versioning": "docker",
+                 "depType": "action",
+                 "replaceString": "actions/setup-node@v3",
+                 "autoReplaceStringTemplate": "{{depName}}@{{#if newDigest}}{{newDigest}}{{#if newValue}} # {{newValue}}{{/if}}{{/if}}{{#unless newDigest}}{{newValue}}{{/unless}}",
+                 "currentValue": "v3",
+                 "updates": [],
+                 "packageName": "actions/setup-node",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/actions/setup-node",
+                 "registryUrl": "https://github.com",
+                 "currentVersion": "v3",
+                 "fixedVersion": "v3"
+               }
+             ],
+             "packageFile": ".github/workflows/release.yaml"
+           }
+         ],
+         "npm": [
+           {
+             "deps": [
+               {
+                 "depType": "devDependencies",
+                 "depName": "@changesets/cli",
+                 "currentValue": "^2.26.1",
+                 "datasource": "npm",
+                 "prettyDepType": "devDependency",
+                 "lockedVersion": "2.26.1",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "2.26.2",
+                     "newValue": "^2.26.1",
+                     "releaseTimestamp": "2023-06-27T08:30:52.503Z",
+                     "newMajor": 2,
+                     "newMinor": 26,
+                     "updateType": "patch",
+                     "isRange": true,
+                     "isLockfileUpdate": true,
+                     "branchName": "renovate/changesets-cli-2.x-lockfile"
+                   }
+                 ],
+                 "packageName": "@changesets/cli",
+                 "versioning": "npm",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/changesets/changesets",
+                 "registryUrl": "https://registry.npmjs.org",
+                 "homepage": "https://github.com/changesets/changesets/tree/main#readme",
+                 "currentVersion": "2.26.1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "2.26.1"
+               },
+               {
+                 "depType": "devDependencies",
+                 "depName": "eslint",
+                 "currentValue": "^8.41.0",
+                 "datasource": "npm",
+                 "prettyDepType": "devDependency",
+                 "lockedVersion": "8.41.0",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "8.43.0",
+                     "newValue": "^8.41.0",
+                     "releaseTimestamp": "2023-06-16T21:53:46.357Z",
+                     "newMajor": 8,
+                     "newMinor": 43,
+                     "updateType": "minor",
+                     "isRange": true,
+                     "isLockfileUpdate": true,
+                     "branchName": "renovate/eslint-8.x-lockfile"
+                   }
+                 ],
+                 "packageName": "eslint",
+                 "versioning": "npm",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/eslint/eslint",
+                 "registryUrl": "https://registry.npmjs.org",
+                 "homepage": "https://eslint.org",
+                 "currentVersion": "8.41.0",
+                 "isSingleVersion": true,
+                 "fixedVersion": "8.41.0"
+               }
+             ],
+             "packageFileVersion": "1.0.0",
+             "managerData": {
+               "pnpmShrinkwrap": "pnpm-lock.yaml",
+               "packageJsonName": "@bayathy/eslint-config",
+               "yarnZeroInstall": false,
+               "hasPackageManager": false
+             },
+             "skipInstalls": true,
+             "extractedConstraints": {},
+             "packageFile": "package.json",
+             "lockFiles": ["pnpm-lock.yaml"]
+           },
+           {
+             "deps": [
+               {
+                 "depType": "dependencies",
+                 "depName": "@typescript-eslint/eslint-plugin",
+                 "currentValue": "^5.59.6",
+                 "datasource": "npm",
+                 "prettyDepType": "dependency",
+                 "lockedVersion": "5.59.6",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "5.60.1",
+                     "newValue": "^5.59.6",
+                     "releaseTimestamp": "2023-06-26T17:18:04.625Z",
+                     "newMajor": 5,
+                     "newMinor": 60,
+                     "updateType": "minor",
+                     "isRange": true,
+                     "isLockfileUpdate": true,
+                     "branchName": "renovate/typescript-eslint-monorepo"
+                   }
+                 ],
+                 "packageName": "@typescript-eslint/eslint-plugin",
+                 "versioning": "npm",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/typescript-eslint/typescript-eslint",
+                 "registryUrl": "https://registry.npmjs.org",
+                 "sourceDirectory": "packages/eslint-plugin",
+                 "currentVersion": "5.59.6",
+                 "isSingleVersion": true,
+                 "fixedVersion": "5.59.6"
+               },
+               {
+                 "depType": "dependencies",
+                 "depName": "@typescript-eslint/parser",
+                 "currentValue": "^5.59.6",
+                 "datasource": "npm",
+                 "prettyDepType": "dependency",
+                 "lockedVersion": "5.59.6",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "5.60.1",
+                     "newValue": "^5.59.6",
+                     "releaseTimestamp": "2023-06-26T17:17:35.827Z",
+                     "newMajor": 5,
+                     "newMinor": 60,
+                     "updateType": "minor",
+                     "isRange": true,
+                     "isLockfileUpdate": true,
+                     "branchName": "renovate/typescript-eslint-monorepo"
+                   }
+                 ],
+                 "packageName": "@typescript-eslint/parser",
+                 "versioning": "npm",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/typescript-eslint/typescript-eslint",
+                 "registryUrl": "https://registry.npmjs.org",
+                 "sourceDirectory": "packages/parser",
+                 "currentVersion": "5.59.6",
+                 "isSingleVersion": true,
+                 "fixedVersion": "5.59.6"
+               },
+               {
+                 "depType": "dependencies",
+                 "depName": "eslint-config-prettier",
+                 "currentValue": "^8.8.0",
+                 "datasource": "npm",
+                 "prettyDepType": "dependency",
+                 "lockedVersion": "8.8.0",
+                 "updates": [],
+                 "packageName": "eslint-config-prettier",
+                 "versioning": "npm",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/prettier/eslint-config-prettier",
+                 "registryUrl": "https://registry.npmjs.org",
+                 "currentVersion": "8.8.0",
+                 "fixedVersion": "8.8.0"
+               },
+               {
+                 "depType": "dependencies",
+                 "depName": "eslint-import-resolver-typescript",
+                 "currentValue": "^3.5.5",
+                 "datasource": "npm",
+                 "prettyDepType": "dependency",
+                 "lockedVersion": "3.5.5",
+                 "updates": [],
+                 "packageName": "eslint-import-resolver-typescript",
+                 "versioning": "npm",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/import-js/eslint-import-resolver-typescript",
+                 "registryUrl": "https://registry.npmjs.org",
+                 "currentVersion": "3.5.5",
+                 "fixedVersion": "3.5.5"
+               },
+               {
+                 "depType": "dependencies",
+                 "depName": "eslint-plugin-import",
+                 "currentValue": "^2.27.5",
+                 "datasource": "npm",
+                 "prettyDepType": "dependency",
+                 "lockedVersion": "2.27.5",
+                 "updates": [],
+                 "packageName": "eslint-plugin-import",
+                 "versioning": "npm",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/import-js/eslint-plugin-import",
+                 "registryUrl": "https://registry.npmjs.org",
+                 "currentVersion": "2.27.5",
+                 "fixedVersion": "2.27.5"
+               },
+               {
+                 "depType": "dependencies",
+                 "depName": "eslint-plugin-sonarjs",
+                 "currentValue": "^0.19.0",
+                 "datasource": "npm",
+                 "prettyDepType": "dependency",
+                 "lockedVersion": "0.19.0",
+                 "updates": [],
+                 "packageName": "eslint-plugin-sonarjs",
+                 "versioning": "npm",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/SonarSource/eslint-plugin-sonarjs",
+                 "registryUrl": "https://registry.npmjs.org",
+                 "currentVersion": "0.19.0",
+                 "fixedVersion": "0.19.0"
+               },
+               {
+                 "depType": "dependencies",
+                 "depName": "eslint-plugin-unicorn",
+                 "currentValue": "^47.0.0",
+                 "datasource": "npm",
+                 "prettyDepType": "dependency",
+                 "lockedVersion": "47.0.0",
+                 "updates": [],
+                 "packageName": "eslint-plugin-unicorn",
+                 "versioning": "npm",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/sindresorhus/eslint-plugin-unicorn",
+                 "registryUrl": "https://registry.npmjs.org",
+                 "currentVersion": "47.0.0",
+                 "fixedVersion": "47.0.0"
+               },
+               {
+                 "depType": "dependencies",
+                 "depName": "eslint-plugin-unused-imports",
+                 "currentValue": "^2.0.0",
+                 "datasource": "npm",
+                 "prettyDepType": "dependency",
+                 "lockedVersion": "2.0.0",
+                 "updates": [],
+                 "packageName": "eslint-plugin-unused-imports",
+                 "versioning": "npm",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/sweepline/eslint-plugin-unused-imports",
+                 "registryUrl": "https://registry.npmjs.org",
+                 "currentVersion": "2.0.0",
+                 "fixedVersion": "2.0.0"
+               }
+             ],
+             "packageFileVersion": "1.2.1",
+             "managerData": {
+               "pnpmShrinkwrap": "pnpm-lock.yaml",
+               "packageJsonName": "@bayathy/eslint-config",
+               "yarnZeroInstall": false,
+               "hasPackageManager": false
+             },
+             "skipInstalls": true,
+             "extractedConstraints": {},
+             "packageFile": "packages/basic/package.json",
+             "lockFiles": ["pnpm-lock.yaml"]
+           },
+           {
+             "deps": [
+               {
+                 "depType": "dependencies",
+                 "depName": "@typescript-eslint/utils",
+                 "currentValue": "^5.59.6",
+                 "datasource": "npm",
+                 "prettyDepType": "dependency",
+                 "lockedVersion": "5.59.6",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "5.60.1",
+                     "newValue": "^5.59.6",
+                     "releaseTimestamp": "2023-06-26T17:17:48.013Z",
+                     "newMajor": 5,
+                     "newMinor": 60,
+                     "updateType": "minor",
+                     "isRange": true,
+                     "isLockfileUpdate": true,
+                     "branchName": "renovate/typescript-eslint-monorepo"
+                   }
+                 ],
+                 "packageName": "@typescript-eslint/utils",
+                 "versioning": "npm",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/typescript-eslint/typescript-eslint",
+                 "registryUrl": "https://registry.npmjs.org",
+                 "sourceDirectory": "packages/utils",
+                 "currentVersion": "5.59.6",
+                 "isSingleVersion": true,
+                 "fixedVersion": "5.59.6"
+               },
+               {
+                 "depType": "dependencies",
+                 "depName": "eslint-plugin-jest",
+                 "currentValue": "^27.2.1",
+                 "datasource": "npm",
+                 "prettyDepType": "dependency",
+                 "lockedVersion": "27.2.1",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "27.2.2",
+                     "newValue": "^27.2.1",
+                     "releaseTimestamp": "2023-06-19T08:37:48.130Z",
+                     "newMajor": 27,
+                     "newMinor": 2,
+                     "updateType": "patch",
+                     "isRange": true,
+                     "isLockfileUpdate": true,
+                     "branchName": "renovate/eslint-plugin-jest-27.x-lockfile"
+                   }
+                 ],
+                 "packageName": "eslint-plugin-jest",
+                 "versioning": "npm",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/jest-community/eslint-plugin-jest",
+                 "registryUrl": "https://registry.npmjs.org",
+                 "currentVersion": "27.2.1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "27.2.1"
+               },
+               {
+                 "depType": "dependencies",
+                 "depName": "eslint-plugin-jest-dom",
+                 "currentValue": "^5.0.0",
+                 "datasource": "npm",
+                 "prettyDepType": "dependency",
+                 "lockedVersion": "5.0.0",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "5.0.1",
+                     "newValue": "^5.0.0",
+                     "releaseTimestamp": "2023-06-04T20:03:04.898Z",
+                     "newMajor": 5,
+                     "newMinor": 0,
+                     "updateType": "patch",
+                     "isRange": true,
+                     "isLockfileUpdate": true,
+                     "branchName": "renovate/eslint-plugin-jest-dom-5.x-lockfile"
+                   }
+                 ],
+                 "packageName": "eslint-plugin-jest-dom",
+                 "versioning": "npm",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/testing-library/eslint-plugin-jest-dom",
+                 "registryUrl": "https://registry.npmjs.org",
+                 "currentVersion": "5.0.0",
+                 "isSingleVersion": true,
+                 "fixedVersion": "5.0.0"
+               }
+             ],
+             "packageFileVersion": "1.1.0",
+             "managerData": {
+               "pnpmShrinkwrap": "pnpm-lock.yaml",
+               "packageJsonName": "@bayathy/eslint-config-jest",
+               "yarnZeroInstall": false,
+               "hasPackageManager": false
+             },
+             "skipInstalls": true,
+             "extractedConstraints": {},
+             "packageFile": "packages/jest/package.json",
+             "lockFiles": ["pnpm-lock.yaml"]
+           },
+           {
+             "deps": [
+               {
+                 "depType": "dependencies",
+                 "depName": "eslint-config-next",
+                 "currentValue": "^13.4.3",
+                 "datasource": "npm",
+                 "prettyDepType": "dependency",
+                 "lockedVersion": "13.4.3",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "13.4.7",
+                     "newValue": "^13.4.3",
+                     "releaseTimestamp": "2023-06-21T21:23:50.698Z",
+                     "newMajor": 13,
+                     "newMinor": 4,
+                     "updateType": "patch",
+                     "isRange": true,
+                     "isLockfileUpdate": true,
+                     "branchName": "renovate/nextjs-monorepo"
+                   }
+                 ],
+                 "packageName": "eslint-config-next",
+                 "versioning": "npm",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/vercel/next.js",
+                 "registryUrl": "https://registry.npmjs.org",
+                 "sourceDirectory": "packages/eslint-config-next",
+                 "homepage": "https://nextjs.org/docs/app/building-your-application/configuring/eslint#eslint-config",
+                 "currentVersion": "13.4.3",
+                 "isSingleVersion": true,
+                 "fixedVersion": "13.4.3"
+               }
+             ],
+             "packageFileVersion": "1.1.0",
+             "managerData": {
+               "pnpmShrinkwrap": "pnpm-lock.yaml",
+               "packageJsonName": "@bayathy/eslint-config-next",
+               "yarnZeroInstall": false,
+               "hasPackageManager": false
+             },
+             "skipInstalls": true,
+             "extractedConstraints": {},
+             "packageFile": "packages/next/package.json",
+             "lockFiles": ["pnpm-lock.yaml"]
+           },
+           {
+             "deps": [
+               {
+                 "depType": "dependencies",
+                 "depName": "eslint-plugin-jsx-a11y",
+                 "currentValue": "^6.7.1",
+                 "datasource": "npm",
+                 "prettyDepType": "dependency",
+                 "lockedVersion": "6.7.1",
+                 "updates": [],
+                 "packageName": "eslint-plugin-jsx-a11y",
+                 "versioning": "npm",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y",
+                 "registryUrl": "https://registry.npmjs.org",
+                 "currentVersion": "6.7.1",
+                 "fixedVersion": "6.7.1"
+               },
+               {
+                 "depType": "dependencies",
+                 "depName": "eslint-plugin-react",
+                 "currentValue": "^7.32.2",
+                 "datasource": "npm",
+                 "prettyDepType": "dependency",
+                 "lockedVersion": "7.32.2",
+                 "updates": [],
+                 "packageName": "eslint-plugin-react",
+                 "versioning": "npm",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/jsx-eslint/eslint-plugin-react",
+                 "registryUrl": "https://registry.npmjs.org",
+                 "currentVersion": "7.32.2",
+                 "fixedVersion": "7.32.2"
+               },
+               {
+                 "depType": "dependencies",
+                 "depName": "eslint-plugin-react-hooks",
+                 "currentValue": "^4.6.0",
+                 "datasource": "npm",
+                 "prettyDepType": "dependency",
+                 "lockedVersion": "4.6.0",
+                 "updates": [],
+                 "packageName": "eslint-plugin-react-hooks",
+                 "versioning": "npm",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/facebook/react",
+                 "registryUrl": "https://registry.npmjs.org",
+                 "sourceDirectory": "packages/eslint-plugin-react-hooks",
+                 "homepage": "https://reactjs.org/",
+                 "currentVersion": "4.6.0",
+                 "fixedVersion": "4.6.0"
+               }
+             ],
+             "packageFileVersion": "1.1.2",
+             "managerData": {
+               "pnpmShrinkwrap": "pnpm-lock.yaml",
+               "packageJsonName": "@bayathy/eslint-config-react",
+               "yarnZeroInstall": false,
+               "hasPackageManager": false
+             },
+             "skipInstalls": true,
+             "extractedConstraints": {},
+             "packageFile": "packages/react/package.json",
+             "lockFiles": ["pnpm-lock.yaml"]
+           },
+           {
+             "deps": [
+               {
+                 "depType": "dependencies",
+                 "depName": "eslint-plugin-tailwindcss",
+                 "currentValue": "^3.12.0",
+                 "datasource": "npm",
+                 "prettyDepType": "dependency",
+                 "lockedVersion": "3.12.0",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "3.13.0",
+                     "newValue": "^3.12.0",
+                     "releaseTimestamp": "2023-06-26T19:46:14.469Z",
+                     "newMajor": 3,
+                     "newMinor": 13,
+                     "updateType": "minor",
+                     "isRange": true,
+                     "isLockfileUpdate": true,
+                     "branchName": "renovate/eslint-plugin-tailwindcss-3.x-lockfile"
+                   }
+                 ],
+                 "packageName": "eslint-plugin-tailwindcss",
+                 "versioning": "npm",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/francoismassart/eslint-plugin-tailwindcss",
+                 "registryUrl": "https://registry.npmjs.org",
+                 "currentVersion": "3.12.0",
+                 "isSingleVersion": true,
+                 "fixedVersion": "3.12.0"
+               }
+             ],
+             "packageFileVersion": "1.1.0",
+             "managerData": {
+               "pnpmShrinkwrap": "pnpm-lock.yaml",
+               "packageJsonName": "@bayathy/eslint-config-tailwindcss",
+               "yarnZeroInstall": false,
+               "hasPackageManager": false
+             },
+             "skipInstalls": true,
+             "extractedConstraints": {},
+             "packageFile": "packages/tailwindcss/package.json",
+             "lockFiles": ["pnpm-lock.yaml"]
+           }
+         ]
+       }
+DEBUG: detectSemanticCommits() (repository=bayathy/eslint)
+DEBUG: semanticCommits: returning "enabled" from cache (repository=bayathy/eslint)
+DEBUG: processRepo() (repository=bayathy/eslint)
+DEBUG: Processing 7 branches: renovate/changesets-cli-2.x-lockfile, renovate/eslint-8.x-lockfile, renovate/eslint-plugin-jest-27.x-lockfile, renovate/eslint-plugin-jest-dom-5.x-lockfile, renovate/eslint-plugin-tailwindcss-3.x-lockfile, renovate/nextjs-monorepo, renovate/typescript-eslint-monorepo (repository=bayathy/eslint)
+DEBUG: Calculating hourly PRs remaining (repository=bayathy/eslint)
+DEBUG: getPrList success (repository=bayathy/eslint)
+       "pullsTotal": 1,
+       "requestsTotal": 1,
+       "apiQuotaAffected": true
+DEBUG: currentHourStart=2023-06-28T11:00:00.000+09:00 (repository=bayathy/eslint)
+DEBUG: PR hourly limit remaining: 2 (repository=bayathy/eslint)
+DEBUG: Calculating prConcurrentLimit (10) (repository=bayathy/eslint)
+DEBUG: getBranchPr(renovate/changesets-cli-2.x-lockfile) (repository=bayathy/eslint)
+DEBUG: findPr(renovate/changesets-cli-2.x-lockfile, undefined, open) (repository=bayathy/eslint)
+DEBUG: findPr(renovate/changesets-cli-2.x-lockfile, undefined, closed) (repository=bayathy/eslint)
+DEBUG: getBranchPr(renovate/nextjs-monorepo) (repository=bayathy/eslint)
+DEBUG: findPr(renovate/nextjs-monorepo, undefined, open) (repository=bayathy/eslint)
+DEBUG: findPr(renovate/nextjs-monorepo, undefined, closed) (repository=bayathy/eslint)
+DEBUG: getBranchPr(renovate/eslint-plugin-jest-27.x-lockfile) (repository=bayathy/eslint)
+DEBUG: findPr(renovate/eslint-plugin-jest-27.x-lockfile, undefined, open) (repository=bayathy/eslint)
+DEBUG: findPr(renovate/eslint-plugin-jest-27.x-lockfile, undefined, closed) (repository=bayathy/eslint)
+DEBUG: getBranchPr(renovate/eslint-plugin-jest-dom-5.x-lockfile) (repository=bayathy/eslint)
+DEBUG: findPr(renovate/eslint-plugin-jest-dom-5.x-lockfile, undefined, open) (repository=bayathy/eslint)
+DEBUG: findPr(renovate/eslint-plugin-jest-dom-5.x-lockfile, undefined, closed) (repository=bayathy/eslint)
+DEBUG: getBranchPr(renovate/eslint-8.x-lockfile) (repository=bayathy/eslint)
+DEBUG: findPr(renovate/eslint-8.x-lockfile, undefined, open) (repository=bayathy/eslint)
+DEBUG: findPr(renovate/eslint-8.x-lockfile, undefined, closed) (repository=bayathy/eslint)
+DEBUG: getBranchPr(renovate/eslint-plugin-tailwindcss-3.x-lockfile) (repository=bayathy/eslint)
+DEBUG: findPr(renovate/eslint-plugin-tailwindcss-3.x-lockfile, undefined, open) (repository=bayathy/eslint)
+DEBUG: findPr(renovate/eslint-plugin-tailwindcss-3.x-lockfile, undefined, closed) (repository=bayathy/eslint)
+DEBUG: getBranchPr(renovate/typescript-eslint-monorepo) (repository=bayathy/eslint)
+DEBUG: findPr(renovate/typescript-eslint-monorepo, undefined, open) (repository=bayathy/eslint)
+DEBUG: findPr(renovate/typescript-eslint-monorepo, undefined, closed) (repository=bayathy/eslint)
+DEBUG: 0 PRs are currently open (repository=bayathy/eslint)
+DEBUG: PR concurrent limit remaining: 10 (repository=bayathy/eslint)
+DEBUG: Calculated maximum PRs remaining this run: 2 (repository=bayathy/eslint)
+DEBUG: PullRequests limit = 2 (repository=bayathy/eslint)
+DEBUG: Calculating hourly PRs remaining (repository=bayathy/eslint)
+DEBUG: currentHourStart=2023-06-28T11:00:00.000+09:00 (repository=bayathy/eslint)
+DEBUG: PR hourly limit remaining: 2 (repository=bayathy/eslint)
+DEBUG: Calculating branchConcurrentLimit (10) (repository=bayathy/eslint)
+DEBUG: 0 already existing branches found:  (repository=bayathy/eslint)
+DEBUG: Branch concurrent limit remaining: 10 (repository=bayathy/eslint)
+DEBUG: Calculated maximum branches remaining this run: 2 (repository=bayathy/eslint)
+DEBUG: Branches limit = 2 (repository=bayathy/eslint)
+DEBUG: syncBranchState() (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: getBranchPr(renovate/changesets-cli-2.x-lockfile) (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: findPr(renovate/changesets-cli-2.x-lockfile, undefined, open) (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: findPr(renovate/changesets-cli-2.x-lockfile, undefined, closed) (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: branchExists=false (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: dependencyDashboardCheck=undefined (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: findPr(renovate/changesets-cli-2.x-lockfile, chore(deps): update dependency @changesets/cli to v2.26.2, !open) (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: prAlreadyExisted=false (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: Checking schedule(, Asia/Tokyo) (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: No schedule defined (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: Branch needs creating (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: Using reuseExistingBranch: false (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: Setting current branch to main (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: latest commit (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+       "branchName": "main",
+       "latestCommitDate": "2023-06-19T13:34:47+09:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: Unsupported lock file: pnpm-lock.yaml (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: No package files need updating (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: Getting updated lock files (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: Writing package.json files (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+       "packageFiles": [
+         "package.json",
+         "packages/basic/package.json",
+         "packages/jest/package.json",
+         "packages/next/package.json",
+         "packages/react/package.json",
+         "packages/tailwindcss/package.json"
+       ]
+DEBUG: Writing any updated package files (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: No updated lock files in branch (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: No files to commit (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: Setting current branch to main (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+DEBUG: latest commit (repository=bayathy/eslint, branch=renovate/changesets-cli-2.x-lockfile)
+       "branchName": "main",
+       "latestCommitDate": "2023-06-19T13:34:47+09:00"
+DEBUG: syncBranchState() (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: getBranchPr(renovate/nextjs-monorepo) (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: findPr(renovate/nextjs-monorepo, undefined, open) (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: findPr(renovate/nextjs-monorepo, undefined, closed) (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: branchExists=false (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: dependencyDashboardCheck=undefined (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: findPr(renovate/nextjs-monorepo, fix(deps): update dependency eslint-config-next to v13.4.7, !open) (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: prAlreadyExisted=false (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: Checking schedule(, Asia/Tokyo) (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: No schedule defined (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: Branch needs creating (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: Using reuseExistingBranch: false (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: Setting current branch to main (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: latest commit (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+       "branchName": "main",
+       "latestCommitDate": "2023-06-19T13:34:47+09:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: Unsupported lock file: pnpm-lock.yaml (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: No package files need updating (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: Getting updated lock files (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: Writing package.json files (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+       "packageFiles": [
+         "package.json",
+         "packages/basic/package.json",
+         "packages/jest/package.json",
+         "packages/next/package.json",
+         "packages/react/package.json",
+         "packages/tailwindcss/package.json"
+       ]
+DEBUG: Writing any updated package files (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: No updated lock files in branch (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: No files to commit (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: Setting current branch to main (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+DEBUG: latest commit (repository=bayathy/eslint, branch=renovate/nextjs-monorepo)
+       "branchName": "main",
+       "latestCommitDate": "2023-06-19T13:34:47+09:00"
+DEBUG: syncBranchState() (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: getBranchPr(renovate/eslint-plugin-jest-27.x-lockfile) (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: findPr(renovate/eslint-plugin-jest-27.x-lockfile, undefined, open) (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: findPr(renovate/eslint-plugin-jest-27.x-lockfile, undefined, closed) (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: branchExists=false (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: dependencyDashboardCheck=undefined (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: findPr(renovate/eslint-plugin-jest-27.x-lockfile, fix(deps): update dependency eslint-plugin-jest to v27.2.2, !open) (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: prAlreadyExisted=false (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: Checking schedule(, Asia/Tokyo) (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: No schedule defined (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: Branch needs creating (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: Using reuseExistingBranch: false (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: Setting current branch to main (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: latest commit (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+       "branchName": "main",
+       "latestCommitDate": "2023-06-19T13:34:47+09:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: Unsupported lock file: pnpm-lock.yaml (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: No package files need updating (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: Getting updated lock files (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: Writing package.json files (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+       "packageFiles": [
+         "package.json",
+         "packages/basic/package.json",
+         "packages/jest/package.json",
+         "packages/next/package.json",
+         "packages/react/package.json",
+         "packages/tailwindcss/package.json"
+       ]
+DEBUG: Writing any updated package files (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: No updated lock files in branch (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: No files to commit (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: Setting current branch to main (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+DEBUG: latest commit (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-27.x-lockfile)
+       "branchName": "main",
+       "latestCommitDate": "2023-06-19T13:34:47+09:00"
+DEBUG: syncBranchState() (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: getBranchPr(renovate/eslint-plugin-jest-dom-5.x-lockfile) (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: findPr(renovate/eslint-plugin-jest-dom-5.x-lockfile, undefined, open) (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: findPr(renovate/eslint-plugin-jest-dom-5.x-lockfile, undefined, closed) (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: branchExists=false (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: dependencyDashboardCheck=undefined (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: findPr(renovate/eslint-plugin-jest-dom-5.x-lockfile, fix(deps): update dependency eslint-plugin-jest-dom to v5.0.1, !open) (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: prAlreadyExisted=false (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: Checking schedule(, Asia/Tokyo) (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: No schedule defined (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: Branch needs creating (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: Using reuseExistingBranch: false (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: Setting current branch to main (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: latest commit (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+       "branchName": "main",
+       "latestCommitDate": "2023-06-19T13:34:47+09:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: Unsupported lock file: pnpm-lock.yaml (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: No package files need updating (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: Getting updated lock files (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: Writing package.json files (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+       "packageFiles": [
+         "package.json",
+         "packages/basic/package.json",
+         "packages/jest/package.json",
+         "packages/next/package.json",
+         "packages/react/package.json",
+         "packages/tailwindcss/package.json"
+       ]
+DEBUG: Writing any updated package files (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: No updated lock files in branch (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: No files to commit (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: Setting current branch to main (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+DEBUG: latest commit (repository=bayathy/eslint, branch=renovate/eslint-plugin-jest-dom-5.x-lockfile)
+       "branchName": "main",
+       "latestCommitDate": "2023-06-19T13:34:47+09:00"
+DEBUG: syncBranchState() (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: getBranchPr(renovate/eslint-8.x-lockfile) (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: findPr(renovate/eslint-8.x-lockfile, undefined, open) (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: findPr(renovate/eslint-8.x-lockfile, undefined, closed) (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: branchExists=false (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: dependencyDashboardCheck=undefined (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: findPr(renovate/eslint-8.x-lockfile, chore(deps): update dependency eslint to v8.43.0, !open) (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: prAlreadyExisted=false (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: Checking schedule(, Asia/Tokyo) (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: No schedule defined (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: Branch needs creating (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: Using reuseExistingBranch: false (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: Setting current branch to main (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: latest commit (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+       "branchName": "main",
+       "latestCommitDate": "2023-06-19T13:34:47+09:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: Unsupported lock file: pnpm-lock.yaml (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: No package files need updating (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: Getting updated lock files (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: Writing package.json files (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+       "packageFiles": [
+         "package.json",
+         "packages/basic/package.json",
+         "packages/jest/package.json",
+         "packages/next/package.json",
+         "packages/react/package.json",
+         "packages/tailwindcss/package.json"
+       ]
+DEBUG: Writing any updated package files (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: No updated lock files in branch (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: No files to commit (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: Setting current branch to main (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+DEBUG: latest commit (repository=bayathy/eslint, branch=renovate/eslint-8.x-lockfile)
+       "branchName": "main",
+       "latestCommitDate": "2023-06-19T13:34:47+09:00"
+DEBUG: syncBranchState() (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: getBranchPr(renovate/eslint-plugin-tailwindcss-3.x-lockfile) (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: findPr(renovate/eslint-plugin-tailwindcss-3.x-lockfile, undefined, open) (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: findPr(renovate/eslint-plugin-tailwindcss-3.x-lockfile, undefined, closed) (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: branchExists=false (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: dependencyDashboardCheck=undefined (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: findPr(renovate/eslint-plugin-tailwindcss-3.x-lockfile, fix(deps): update dependency eslint-plugin-tailwindcss to v3.13.0, !open) (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: prAlreadyExisted=false (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: Checking schedule(, Asia/Tokyo) (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: No schedule defined (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: Branch needs creating (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: Using reuseExistingBranch: false (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: Setting current branch to main (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: latest commit (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+       "branchName": "main",
+       "latestCommitDate": "2023-06-19T13:34:47+09:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: Unsupported lock file: pnpm-lock.yaml (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: No package files need updating (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: Getting updated lock files (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: Writing package.json files (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+       "packageFiles": [
+         "package.json",
+         "packages/basic/package.json",
+         "packages/jest/package.json",
+         "packages/next/package.json",
+         "packages/react/package.json",
+         "packages/tailwindcss/package.json"
+       ]
+DEBUG: Writing any updated package files (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: No updated lock files in branch (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: No files to commit (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: Setting current branch to main (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+DEBUG: latest commit (repository=bayathy/eslint, branch=renovate/eslint-plugin-tailwindcss-3.x-lockfile)
+       "branchName": "main",
+       "latestCommitDate": "2023-06-19T13:34:47+09:00"
+DEBUG: syncBranchState() (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: getBranchPr(renovate/typescript-eslint-monorepo) (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: findPr(renovate/typescript-eslint-monorepo, undefined, open) (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: findPr(renovate/typescript-eslint-monorepo, undefined, closed) (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: branchExists=false (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: dependencyDashboardCheck=undefined (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: findPr(renovate/typescript-eslint-monorepo, fix(deps): update typescript-eslint monorepo to v5.60.1, !open) (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: prAlreadyExisted=false (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: Checking schedule(, Asia/Tokyo) (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: No schedule defined (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: Branch needs creating (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: Using reuseExistingBranch: false (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: Setting current branch to main (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: latest commit (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+       "branchName": "main",
+       "latestCommitDate": "2023-06-19T13:34:47+09:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: Unsupported lock file: pnpm-lock.yaml (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: Unsupported lock file: pnpm-lock.yaml (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: Unsupported lock file: pnpm-lock.yaml (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: No package files need updating (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: Getting updated lock files (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: Writing package.json files (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+       "packageFiles": [
+         "package.json",
+         "packages/basic/package.json",
+         "packages/jest/package.json",
+         "packages/next/package.json",
+         "packages/react/package.json",
+         "packages/tailwindcss/package.json"
+       ]
+DEBUG: Writing any updated package files (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: No updated lock files in branch (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: No files to commit (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: Setting current branch to main (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+DEBUG: latest commit (repository=bayathy/eslint, branch=renovate/typescript-eslint-monorepo)
+       "branchName": "main",
+       "latestCommitDate": "2023-06-19T13:34:47+09:00"
+DEBUG: getPrCache() (repository=bayathy/eslint)
+DEBUG: getPrCache() (repository=bayathy/eslint)
+DEBUG: getPrCache() (repository=bayathy/eslint)
+DEBUG: getPrCache() (repository=bayathy/eslint)
+DEBUG: getPrCache() (repository=bayathy/eslint)
+DEBUG: getPrCache() (repository=bayathy/eslint)
+DEBUG: getPrCache() (repository=bayathy/eslint)
+DEBUG: ensureDependencyDashboard() (repository=bayathy/eslint)
+DEBUG: Ensuring Dependency Dashboard (repository=bayathy/eslint)
+ INFO: DRY-RUN: Would ensure Dependency Dashboard (repository=bayathy/eslint)
+       "title": "Dependency Dashboard"
+ INFO: DRY-RUN: Would save repository cache. (repository=bayathy/eslint)
+DEBUG: Removing any stale branches (repository=bayathy/eslint)
+DEBUG: config.repoIsOnboarded=true (repository=bayathy/eslint)
+DEBUG: No renovate branches found (repository=bayathy/eslint)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=bayathy/eslint)
+DEBUG: Repo is activated (repository=bayathy/eslint)
+DEBUG: Branch summary (repository=bayathy/eslint)
+       "cacheModified": undefined,
+       "baseBranches": [{"branchName": "main", "sha": "366701377c417274594593b124eef56bb3400ce8"}],
+       "branches": [],
+       "defaultBranch": "main",
+       "inactiveBranches": [
+         "renovate/changesets-cli-2.x-lockfile",
+         "renovate/nextjs-monorepo",
+         "renovate/eslint-plugin-jest-27.x-lockfile",
+         "renovate/eslint-plugin-jest-dom-5.x-lockfile",
+         "renovate/eslint-8.x-lockfile",
+         "renovate/eslint-plugin-tailwindcss-3.x-lockfile",
+         "renovate/typescript-eslint-monorepo"
+       ]
+DEBUG: branches info extended (repository=bayathy/eslint)
+       "branchesInformation": [
+         {
+           "branchName": "renovate/changesets-cli-2.x-lockfile",
+           "prNo": null,
+           "prTitle": "chore(deps): update dependency @changesets/cli to v2.26.2",
+           "result": "no-work",
+           "upgrades": [
+             {
+               "datasource": "npm",
+               "depName": "@changesets/cli",
+               "displayPending": "",
+               "fixedVersion": "2.26.1",
+               "currentVersion": "2.26.1",
+               "currentValue": "^2.26.1",
+               "newValue": "^2.26.1",
+               "newVersion": "2.26.2",
+               "packageFile": "package.json",
+               "updateType": "patch",
+               "packageName": "@changesets/cli"
+             }
+           ]
+         },
+         {
+           "branchName": "renovate/nextjs-monorepo",
+           "prNo": null,
+           "prTitle": "fix(deps): update dependency eslint-config-next to v13.4.7",
+           "result": "no-work",
+           "upgrades": [
+             {
+               "datasource": "npm",
+               "depName": "eslint-config-next",
+               "displayPending": "",
+               "fixedVersion": "13.4.3",
+               "currentVersion": "13.4.3",
+               "currentValue": "^13.4.3",
+               "newValue": "^13.4.3",
+               "newVersion": "13.4.7",
+               "packageFile": "packages/next/package.json",
+               "updateType": "patch",
+               "packageName": "eslint-config-next"
+             }
+           ]
+         },
+         {
+           "branchName": "renovate/eslint-plugin-jest-27.x-lockfile",
+           "prNo": null,
+           "prTitle": "fix(deps): update dependency eslint-plugin-jest to v27.2.2",
+           "result": "no-work",
+           "upgrades": [
+             {
+               "datasource": "npm",
+               "depName": "eslint-plugin-jest",
+               "displayPending": "",
+               "fixedVersion": "27.2.1",
+               "currentVersion": "27.2.1",
+               "currentValue": "^27.2.1",
+               "newValue": "^27.2.1",
+               "newVersion": "27.2.2",
+               "packageFile": "packages/jest/package.json",
+               "updateType": "patch",
+               "packageName": "eslint-plugin-jest"
+             }
+           ]
+         },
+         {
+           "branchName": "renovate/eslint-plugin-jest-dom-5.x-lockfile",
+           "prNo": null,
+           "prTitle": "fix(deps): update dependency eslint-plugin-jest-dom to v5.0.1",
+           "result": "no-work",
+           "upgrades": [
+             {
+               "datasource": "npm",
+               "depName": "eslint-plugin-jest-dom",
+               "displayPending": "",
+               "fixedVersion": "5.0.0",
+               "currentVersion": "5.0.0",
+               "currentValue": "^5.0.0",
+               "newValue": "^5.0.0",
+               "newVersion": "5.0.1",
+               "packageFile": "packages/jest/package.json",
+               "updateType": "patch",
+               "packageName": "eslint-plugin-jest-dom"
+             }
+           ]
+         },
+         {
+           "branchName": "renovate/eslint-8.x-lockfile",
+           "prNo": null,
+           "prTitle": "chore(deps): update dependency eslint to v8.43.0",
+           "result": "no-work",
+           "upgrades": [
+             {
+               "datasource": "npm",
+               "depName": "eslint",
+               "displayPending": "",
+               "fixedVersion": "8.41.0",
+               "currentVersion": "8.41.0",
+               "currentValue": "^8.41.0",
+               "newValue": "^8.41.0",
+               "newVersion": "8.43.0",
+               "packageFile": "package.json",
+               "updateType": "minor",
+               "packageName": "eslint"
+             }
+           ]
+         },
+         {
+           "branchName": "renovate/eslint-plugin-tailwindcss-3.x-lockfile",
+           "prNo": null,
+           "prTitle": "fix(deps): update dependency eslint-plugin-tailwindcss to v3.13.0",
+           "result": "no-work",
+           "upgrades": [
+             {
+               "datasource": "npm",
+               "depName": "eslint-plugin-tailwindcss",
+               "displayPending": "",
+               "fixedVersion": "3.12.0",
+               "currentVersion": "3.12.0",
+               "currentValue": "^3.12.0",
+               "newValue": "^3.12.0",
+               "newVersion": "3.13.0",
+               "packageFile": "packages/tailwindcss/package.json",
+               "updateType": "minor",
+               "packageName": "eslint-plugin-tailwindcss"
+             }
+           ]
+         },
+         {
+           "branchName": "renovate/typescript-eslint-monorepo",
+           "prNo": null,
+           "prTitle": "fix(deps): update typescript-eslint monorepo to v5.60.1",
+           "result": "no-work",
+           "upgrades": [
+             {
+               "datasource": "npm",
+               "depName": "@typescript-eslint/eslint-plugin",
+               "displayPending": "",
+               "fixedVersion": "5.59.6",
+               "currentVersion": "5.59.6",
+               "currentValue": "^5.59.6",
+               "newValue": "^5.59.6",
+               "newVersion": "5.60.1",
+               "packageFile": "packages/basic/package.json",
+               "updateType": "minor",
+               "packageName": "@typescript-eslint/eslint-plugin"
+             },
+             {
+               "datasource": "npm",
+               "depName": "@typescript-eslint/parser",
+               "displayPending": "",
+               "fixedVersion": "5.59.6",
+               "currentVersion": "5.59.6",
+               "currentValue": "^5.59.6",
+               "newValue": "^5.59.6",
+               "newVersion": "5.60.1",
+               "packageFile": "packages/basic/package.json",
+               "updateType": "minor",
+               "packageName": "@typescript-eslint/parser"
+             },
+             {
+               "datasource": "npm",
+               "depName": "@typescript-eslint/utils",
+               "displayPending": "",
+               "fixedVersion": "5.59.6",
+               "currentVersion": "5.59.6",
+               "currentValue": "^5.59.6",
+               "newValue": "^5.59.6",
+               "newVersion": "5.60.1",
+               "packageFile": "packages/jest/package.json",
+               "updateType": "minor",
+               "packageName": "@typescript-eslint/utils"
+             }
+           ]
+         }
+       ]
+DEBUG: Renovate repository PR statistics (repository=bayathy/eslint)
+       "stats": {"total": 1, "open": 0, "closed": 0, "merged": 1}
+DEBUG: Repository result: done, status: activated, enabled: true, onboarded: true (repository=bayathy/eslint)
+DEBUG: Repository timing splits (milliseconds) (repository=bayathy/eslint)
+       "splits": {"init": 1722, "extract": 2598, "lookup": 2254, "onboarding": 0, "update": 1244},
+       "total": 8147
+DEBUG: Package cache statistics (repository=bayathy/eslint)
+       "get": {"count": 26, "avgMs": 81, "medianMs": 48, "maxMs": 390},
+       "set": {"count": 0}
+DEBUG: http statistics (repository=bayathy/eslint)
+       "urls": {
+         "https://api.github.com/graphql (POST,200)": 12,
+         "https://api.github.com/repos/bayathy/eslint/issues/10 (GET,200)": 2,
+         "https://api.github.com/repos/bayathy/eslint/pulls (GET,200)": 1
+       },
+       "hostStats": {"api.github.com": {"requestCount": 15, "requestAvgMs": 450, "queueAvgMs": 0}},
+       "totalRequests": 15
+DEBUG: Package lookup durations (repository=bayathy/eslint)
+       "npm": {"count": 18, "averageMs": 138, "totalMs": 2489, "maximumMs": 480},
+       "github-tags": {"count": 4, "averageMs": 1294, "totalMs": 5175, "maximumMs": 2106}
+DEBUG: dns cache (repository=bayathy/eslint)
+       "hosts": []
+ INFO: Repository finished (repository=bayathy/eslint)
+       "cloned": true,
+       "durationMs": 8147
+DEBUG: Checking file package cache for expired items
+DEBUG: Deleted 0 of 18 file cached entries in 13ms
+DEBUG: Renovate exiting

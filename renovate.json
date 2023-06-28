@@ -3,11 +3,12 @@
   "extends": [
     ":timezone(Asia/Tokyo)",
     ":label(renovate)",
+    ":prConcurrentLimit10",
     ":semanticCommitTypeAll(chore)",
-    "group:monorepos",
-    "config:base"
+    "schedule:weekly" 
   ],
+  "baseBranches": ["main"],
   "labels": ["dependencies", "renovate"],
-  "schedule": ["every weekend"],
-  "dependencyDashboard": true
+  "dependencyDashboard": true,
+  "groupName": "all"
 }
