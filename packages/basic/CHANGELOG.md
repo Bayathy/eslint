@@ -1,5 +1,12 @@
 # @bayathy/eslint-config
 
+## [1.5.0](https://github.com/Bayathy/eslint/compare/eslint-config-v1.4.0...eslint-config-v1.5.0) (2023-07-11)
+
+
+### Features
+
+* update package versions ([e7d8c10](https://github.com/Bayathy/eslint/commit/e7d8c10466d034d4cb0b53013fa4ad44475b5ead))
+
 ## [1.4.0](https://github.com/Bayathy/eslint/compare/eslint-config-v1.3.1...eslint-config-v1.4.0) (2023-06-28)
 
 

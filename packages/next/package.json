@@ -1,6 +1,6 @@
 {
   "name": "@bayathy/eslint-config-next",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "My next eslint config",
   "main": "index.js",
   "scripts": {

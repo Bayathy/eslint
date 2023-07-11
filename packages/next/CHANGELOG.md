@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/Bayathy/eslint/compare/eslint-config-next-v1.4.0...eslint-config-next-v1.5.0) (2023-07-11)
+
+
+### Features
+
+* update package versions ([e43edd6](https://github.com/Bayathy/eslint/commit/e43edd6c1d98af895c15997bb2164d3f0a591227))
+
 ## [1.4.0](https://github.com/Bayathy/eslint/compare/eslint-config-next-v1.3.1...eslint-config-next-v1.4.0) (2023-06-28)
 
 
