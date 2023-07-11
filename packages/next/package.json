@@ -15,6 +15,6 @@
   "author": "Bayathy",
   "license": "MIT",
   "dependencies": {
-    "eslint-config-next": "^13.4.7"
+    "eslint-config-next": "^13.4.9"
   }
 }
