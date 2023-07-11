@@ -5,10 +5,25 @@
     ":label(renovate)",
     ":prConcurrentLimit10",
     ":semanticCommitTypeAll(chore)",
-    "schedule:weekly" 
+    "schedule:weekly"
   ],
   "baseBranches": ["main"],
   "labels": ["dependencies", "renovate"],
   "dependencyDashboard": true,
-  "groupName": "all"
+  "packageRules": [
+    {
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch",
+      "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
+      "groupName": "all major dependencies",
+      "groupSlug": "all-major",
+      "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": ["major"],
+      "automerge": true
+    }
+  ]
 }
