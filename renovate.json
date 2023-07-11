@@ -4,7 +4,7 @@
     ":timezone(Asia/Tokyo)",
     ":label(renovate)",
     ":prConcurrentLimit10",
-    ":semanticCommitTypeAll(chore)",
+    ":semanticCommitTypeAll(feat)",
     "schedule:weekly"
   ],
   "baseBranches": ["main"],
