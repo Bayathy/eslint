@@ -1,5 +1,12 @@
 # @bayathy/eslint-config
 
+## [1.6.0](https://github.com/Bayathy/eslint/compare/eslint-config-v1.5.0...eslint-config-v1.6.0) (2023-07-15)
+
+
+### Features
+
+* **deps:** update dependency eslint-plugin-unused-imports to v3 ([feac060](https://github.com/Bayathy/eslint/commit/feac060d043f9030d312f763033c95d73c16d323))
+
 ## [1.5.0](https://github.com/Bayathy/eslint/compare/eslint-config-v1.4.0...eslint-config-v1.5.0) (2023-07-11)
 
 
