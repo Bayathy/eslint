@@ -1,5 +1,12 @@
 # @bayathy/eslint-config
 
+## [1.7.0](https://github.com/Bayathy/eslint/compare/eslint-config-v1.6.0...eslint-config-v1.7.0) (2023-07-30)
+
+
+### Features
+
+* **deps:** update dependency eslint-plugin-unicorn to v48 ([06e9965](https://github.com/Bayathy/eslint/commit/06e9965490c621eb75f081ef7b834d0cba2ba5ca))
+
 ## [1.6.0](https://github.com/Bayathy/eslint/compare/eslint-config-v1.5.0...eslint-config-v1.6.0) (2023-07-15)
 
 
