@@ -5,7 +5,8 @@
     ":label(renovate)",
     ":prConcurrentLimit10",
     ":semanticCommitTypeAll(feat)",
-    "schedule:weekly"
+    "schedule:weekly",
+    ":skipStatusChecks"
   ],
   "baseBranches": ["main"],
   "labels": ["dependencies", "renovate"],
