@@ -3,12 +3,10 @@
   "extends": [
     ":timezone(Asia/Tokyo)",
     ":label(renovate)",
-    ":prConcurrentLimit10",
     ":semanticCommitTypeAll(feat)",
     "schedule:weekly",
-    ":skipStatusChecks"
+    "dependencyDashboard"
   ],
-  "baseBranches": ["main"],
   "labels": ["dependencies", "renovate"],
   "dependencyDashboard": true,
   "packageRules": [
@@ -16,8 +14,13 @@
       "groupName": "all major dependencies",
       "groupSlug": "all-major",
       "matchPackagePatterns": ["*"],
-      "matchUpdateTypes": ["major"],
-      "automerge": true
+      "matchUpdateTypes": ["major"]
+    },
+    {
+      "groupName": "all minor and patch dependencies",
+      "groupSlug": "all-minor-patch",
+      "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": ["minor", "patch"]
     }
   ]
 }
