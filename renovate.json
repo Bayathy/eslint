@@ -4,8 +4,7 @@
     ":timezone(Asia/Tokyo)",
     ":label(renovate)",
     ":semanticCommitTypeAll(feat)",
-    "schedule:weekly",
-    "dependencyDashboard"
+    "schedule:weekly"
   ],
   "labels": ["dependencies", "renovate"],
   "dependencyDashboard": true,
