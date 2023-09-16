@@ -68,5 +68,8 @@ module.exports = {
     "prefer-template": "error",
     "keyword-spacing": ["error", { before: true }],
     "unicorn/prevent-abbreviations": "off",
+    "unicorn/consistent-function-scoping": "off",
+    "unicorn/no-null": "off",
+    "no-console": "warn",
   },
 };
