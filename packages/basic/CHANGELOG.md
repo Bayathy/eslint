@@ -1,5 +1,15 @@
 # @bayathy/eslint-config
 
+## [1.8.0](https://github.com/Bayathy/eslint/compare/eslint-config-v1.7.0...eslint-config-v1.8.0) (2023-09-16)
+
+
+### Features
+
+* **deps:** update dependency eslint-config-prettier to v9 ([7261a51](https://github.com/Bayathy/eslint/commit/7261a518dea0cbe6b77ef81c0d64f13143efe5f3))
+* **deps:** update dependency eslint-plugin-sonarjs to ^0.20.0 ([4145c25](https://github.com/Bayathy/eslint/commit/4145c252d8847967b20bbb8201af80e6f3b027d6))
+* **deps:** update dependency eslint-plugin-sonarjs to ^0.21.0 ([4e61d8a](https://github.com/Bayathy/eslint/commit/4e61d8af8f512ff06caa34e7d4874667b0beb646))
+* update basic config ([cea8c49](https://github.com/Bayathy/eslint/commit/cea8c4914b8ad5800a85d425f967c06e16a4bbd5))
+
 ## [1.7.0](https://github.com/Bayathy/eslint/compare/eslint-config-v1.6.0...eslint-config-v1.7.0) (2023-07-30)
 
 
