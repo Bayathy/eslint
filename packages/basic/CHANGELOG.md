@@ -1,5 +1,12 @@
 # @bayathy/eslint-config
 
+## [1.9.0](https://github.com/Bayathy/eslint/compare/eslint-config-v1.8.0...eslint-config-v1.9.0) (2023-12-17)
+
+
+### Features
+
+* **deps:** update all minor and patch dependencies ([e12817d](https://github.com/Bayathy/eslint/commit/e12817df209cc982605bc82580b04700970ebd33))
+
 ## [1.8.0](https://github.com/Bayathy/eslint/compare/eslint-config-v1.7.0...eslint-config-v1.8.0) (2023-09-16)
 
 
